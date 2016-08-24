@@ -1,0 +1,28 @@
+<div class="page-banner article">
+
+</div>
+<div class="content pad-20 has-title">
+  <div class="content-title row pr-20">
+    <div class="col tab v-m">
+      <span class="active">最新</span>
+      <span>推荐</span>
+      <span>我关注的</span>
+    </div>
+    <div class="col v-m t-r">
+      <div class="search">
+        <input type="text" placeholder="文章/作者/">
+        <button class="icon iconfont">&#xe61a;</button>
+      </div>
+    </div>
+  </div>
+  <div class="ht-100p auto">
+    <ul class="article-list">
+      <li class="list-item" ng-repeat="item in data">
+        <a href="javascript:;" class="face circle"><img class="circle" src="img/face.png" alt=""></a>
+        <a class="title" href="javascript:;" ng-bind="item.title"></a>
+        <p class="introduce" ng-bind="item.introduce"></p>
+        <p class="sub-info"><span>类别：<i ng-bind="item.type"></i></span><span>发布时间：<i ng-bind="item.time"></i></span><span>收藏：<i ng-bind="item.collection"></i></span><span>阅读：<i ng-bind="item.read"></i></span></p>
+      </li>
+    </ul>
+  </div>
+</div>
