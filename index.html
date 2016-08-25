@@ -10,7 +10,7 @@
   <div class="aside">
     <ul class="top menu">
       <li><a ui-sref="home" ui-sref-active="active"><i class="icon iconfont">&#xe606;</i><span>首页</span></a></li>
-      <li><a ui-sref="project" ui-sref-active="active"><i class="icon iconfont">&#xe614;</i><span>项目</span></a></li>
+      <li><a ui-sref="project.list" ui-sref-active="active" ng-class="{true:'active',false:''}[isProject]" ng-init="isProject=false"><i class="icon iconfont">&#xe614;</i><span>项目</span></a></li>
       <li><a ui-sref="article" ui-sref-active="active"><i class="icon iconfont">&#xe615;</i><span>文章</span></a></li>
       <li><a ui-sref="community" ui-sref-active="active"><i class="icon iconfont">&#xe616;</i><span>前端圈</span></a></li>
       <li><a ui-sref="publish" ui-sref-active="active"><i class="icon iconfont">&#xe619;</i><span>写文章</span></a></li>

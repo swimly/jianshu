@@ -3,7 +3,7 @@ angular.module("app.controllers",[])
   $scope.data=articleFac.get();
   console.log($scope.data)
 }])
-.controller("projectCtrl",["$scope","projectFac",function($scope,projectFac){
+.controller("projectCtrl",["$scope","projectFac","$rootScope",function($scope,projectFac,$rootScope){
   $scope.data=projectFac.get();
   console.log($scope.data)
 }])
@@ -12,9 +12,8 @@ angular.module("app.controllers",[])
   console.log($scope.data)
 }])
 .controller("publishCtrl",["$scope","publishFac",function($scope,publishFac){
-  $scope.content="hello world"
-  $scope.config = {
-      themePath:"js/plugins/ueditor/themes/default",
-      height:"300px"
-  }
+  $scope.content="hello world";
+}])
+.controller("projectEditCtrl",["$scope","$rootScope",function($scope,$rootScope){
+  $scope.content="hello world";
 }])

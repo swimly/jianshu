@@ -17,7 +17,8 @@ img{border:none;}
 .menu li a:hover{color:#D3D3D3;}
 .main{width:100%;float:right;height:100%;overflow:hidden;}
 /*文章*/
-.page-banner{width:25%;height:100%;float:left;}
+.page-banner{width:25%;height:100%;float:left;position:relative;}
+.page-banner .bottom{width:100%;position:absolute;bottom:0;left:0;padding:20px;}
 .content{width:75%;float:left;height:100%;overflow:auto;}
 .content.has-title{padding-top:50px;overflow:hidden;padding-right:0;}
 .content-title{height:50px;margin-top:-50px;border-bottom:2px solid #E3E3E3;}
@@ -41,6 +42,7 @@ img{border:none;}
 .t-r{text-align:right;}
 .pr-20{padding-right:20px;}
 .ht-100p{height:100%;}
+.mt-20{margin-top:20px;}.mr-10{margin-right:10px;}
 .auto{overflow:auto;}
 .tab span{display:inline-block;cursor:pointer;font-size:1.4em;color:#666;padding:0 0.5em;margin-right:1em;height:50px;line-height:50px;}
 .tab .active{color:#E78170;position:relative;}
@@ -69,10 +71,10 @@ img{border:none;}
 /*前端圈*/
 .page-banner.community{background:url(../img/bg-circle.jpg) no-repeat center center;background-size:100% 100%;}
 .time-line{padding:0 20px;position:relative;}
-.time-line li{position:relative;padding:15px 20px 15px 80px;border-bottom:1px dashed #F1F1F1;position:relative;}
+.time-line li{position:relative;padding:15px 20px 15px 60px;border-bottom:1px dashed #F1F1F1;position:relative;}
 .time-line li:before{content:"";display:inline-block;width:80px;height:1px;background:#fff;position:absolute;left:0;bottom:-1px;}
 .time-line .time{display:inline-block;font-size:1.4em;color:#999;margin-top:5px;}
-.time-line .face{width:60px;height:60px;position:absolute;left:0;top:15px;}
+.time-line .face{width:40px;height:40px;position:absolute;left:0;top:15px;}
 .time-line .title{margin:0;font-weight:normal;font-size:1.8em;color:#4094c7;}
 .time-line .introduce{font-size:1.4em;color:#999;margin-top:5px;}
 .time-line .url a{font-size:3em;text-decoration:none;vertical-align: middle;}
@@ -81,9 +83,13 @@ img{border:none;}
 .c-green{color:#4BAF34;}
 /*btn*/
 .btn{display:inline-block;height:28px;line-height:28px;text-decoration: none;font-size:14px;padding:0 1em;border-radius:5px;color:#fff;}
+.btn-big{height:42px;line-height:42px;padding:0 2em;}
 .btn:hover{opacity:0.9;}
 .btn:active{opacity:1;}
 .btn-blue{background:#60a8d8;}
+.btn-green{background:#49BE38;}
+/*input*/
+.input{height:42px;line-height:42px;width:100%;border:1px solid #f1f1f1;padding:0 1em;}
 @media screen and (max-width:1600px) {
     body{padding-left:45px;}
     .aside{width:45px;margin-left:-45px;}

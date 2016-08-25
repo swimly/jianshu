@@ -18,8 +18,25 @@ var app=angular.module("app",[
     url:'/project',
     views:{
       'main':{
+        templateUrl:'templates/project/tab.html'
+      }
+    }
+  })
+  .state('project.list',{
+    url:'/list',
+    views:{
+      'sub':{
         templateUrl:'templates/project/index.html',
         controller:"projectCtrl"
+      }
+    }
+  })
+  .state('project.edit',{
+    url:'/edit',
+    views:{
+      'sub':{
+        templateUrl:'templates/project/edit.html',
+        controller:'projectEditCtrl'
       }
     }
   })
