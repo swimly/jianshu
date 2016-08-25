@@ -7,3 +7,14 @@ angular.module("app.controllers",[])
   $scope.data=projectFac.get();
   console.log($scope.data)
 }])
+.controller("communityCtrl",["$scope","communityFac",function($scope,communityFac){
+  $scope.data=communityFac.get();
+  console.log($scope.data)
+}])
+.controller("publishCtrl",["$scope","publishFac",function($scope,publishFac){
+  $scope.content="hello world"
+  $scope.config = {
+      themePath:"js/plugins/ueditor/themes/default",
+      height:"300px"
+  }
+}])

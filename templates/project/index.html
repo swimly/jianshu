@@ -4,13 +4,14 @@
 <div class="content pad-20 has-title">
   <div class="content-title row pr-20">
     <div class="col tab v-m">
-      <span class="active">最新</span>
-      <span>推荐</span>
-      <span>我关注的</span>
+      <span class="active">全部</span>
+      <span>手机</span>
+      <span>PC</span>
+      <span>系统</span>
     </div>
     <div class="col v-m t-r">
       <div class="search">
-        <input type="text" placeholder="文章/作者/">
+        <input type="text" placeholder="项目名称">
         <button class="icon iconfont">&#xe61a;</button>
       </div>
     </div>
@@ -20,7 +21,7 @@
       <li ng-repeat="item in data">
         <a href="javascript:;">
           <span class="img"><img src="img/img005.jpg" alt=""></span>
-          <b class="title">标题</b>
+          <b class="title" ng-bind="item.title" title="{{item.title}}"></b>
           <span class="introduce">介绍</span>
         </a>
       </li>

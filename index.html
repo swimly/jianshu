@@ -2,27 +2,27 @@
 <html lang="en" ng-app="app">
 <head>
   <meta charset="UTF-8">
-  <title>首页</title>
+  <title>{{title}}</title>
   <link rel="stylesheet" href="fonts/iconfont.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div class="aside">
     <ul class="top menu">
-      <li><a ui-sref="home" ui-sref-active="active"><i class="icon iconfont">&#xe606;</i>首页</a></li>
-      <li><a ui-sref="project" ui-sref-active="active"><i class="icon iconfont">&#xe614;</i>项目</a></li>
-      <li><a ui-sref="article" ui-sref-active="active"><i class="icon iconfont">&#xe615;</i>文章</a></li>
-      <li><a ui-sref="community" ui-sref-active="active"><i class="icon iconfont">&#xe616;</i>前端圈</a></li>
-      <li><a ui-sref="publish" ui-sref-active="active"><i class="icon iconfont">&#xe619;</i>写文章</a></li>
-      <li><a ui-sref="phone" ui-sref-active="active"><i class="icon iconfont">&#xe605;</i>下载手机版</a></li>
-      <li><a ui-sref="wechat" ui-sref-active="active"><i class="icon iconfont">&#xe600;</i>微信</a></li>
+      <li><a ui-sref="home" ui-sref-active="active"><i class="icon iconfont">&#xe606;</i><span>首页</span></a></li>
+      <li><a ui-sref="project" ui-sref-active="active"><i class="icon iconfont">&#xe614;</i><span>项目</span></a></li>
+      <li><a ui-sref="article" ui-sref-active="active"><i class="icon iconfont">&#xe615;</i><span>文章</span></a></li>
+      <li><a ui-sref="community" ui-sref-active="active"><i class="icon iconfont">&#xe616;</i><span>前端圈</span></a></li>
+      <li><a ui-sref="publish" ui-sref-active="active"><i class="icon iconfont">&#xe619;</i><span>写文章</span></a></li>
+      <li><a ui-sref="phone" ui-sref-active="active"><i class="icon iconfont">&#xe605;</i><span>下载手机版</span></a></li>
+      <li><a ui-sref="wechat" ui-sref-active="active"><i class="icon iconfont">&#xe600;</i><span>微信</span></a></li>
     </ul>
     <ul class="bottom menu">
-      <li><a ui-sref="myhome" ui-sref-active="active"><i class="icon iconfont">&#xe610;</i>我的主页</a></li>
-      <li><a ui-sref="collection" ui-sref-active="active"><i class="icon iconfont">&#xe60d;</i>我的收藏</a></li>
-      <li><a ui-sref="notice" ui-sref-active="active"><i class="icon iconfont">&#xe601;</i>通知</a></li>
-      <li><a ui-sref="setting" ui-sref-active="active"><i class="icon iconfont">&#xe607;</i>设置</a></li>
-      <li><a><i class="icon iconfont">&#xe602;</i>退出</a></li>
+      <li><a ui-sref="myhome" ui-sref-active="active"><i class="icon iconfont">&#xe610;</i><span>我的主页</span></a></li>
+      <li><a ui-sref="collection" ui-sref-active="active"><i class="icon iconfont">&#xe60d;</i><span>我的收藏</span></a></li>
+      <li><a ui-sref="notice" ui-sref-active="active"><i class="icon iconfont">&#xe601;</i><span>通知</span></a></li>
+      <li><a ui-sref="setting" ui-sref-active="active"><i class="icon iconfont">&#xe607;</i><span>设置</span></a></li>
+      <li><a><i class="icon iconfont">&#xe602;</i><span>退出</span></a></li>
     </ul>
   </div>
   <div class="main" ui-view="main"></div>
@@ -30,6 +30,9 @@
   <script src="js/angular-ui-router.min.js"></script>
   <script src="js/controller.js"></script>
   <script src="js/service.js"></script>
+  <script src="js/plugins/ueditor/ueditor.config.js"></script>
+  <script src="js/plugins/ueditor/ueditor.all.js"></script>
+  <script src="js/plugins/ueditor/angular-ueditor.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

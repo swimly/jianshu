@@ -1,7 +1,8 @@
 var app=angular.module("app",[
   'ui.router',
   'app.controllers',
-  'app.services'
+  'app.services',
+  'ng.ueditor'
   ])
 .config(function($stateProvider, $urlRouterProvider){
   $stateProvider
@@ -43,7 +44,8 @@ var app=angular.module("app",[
     url:'/community',
     views:{
       'main':{
-        templateUrl:'templates/community/index.html'
+        templateUrl:'templates/community/index.html',
+        controller:"communityCtrl"
       }
     }
   })
@@ -75,9 +77,16 @@ var app=angular.module("app",[
     url:'/publish',
     views:{
       'main':{
-        templateUrl:'templates/publish/index.html'
+        templateUrl:'templates/publish/index.html',
+        controller:"publishCtrl"
       }
-    }
+    }/*,
+    按需加载编辑器样式和js
+    resolve:{
+      ladMyCtrl:['$ocLazyLoad',function($ocLazyLoad){
+        return $ocLazyLoad.load(['js/trix.js','css/trix.css'])
+      }]
+    }*/
   })
   .state('setting',{
     url:'/setting',
